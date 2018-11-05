@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : property for file
+#key : <pr
+#contributor : xashes
+# --
+#+PROPERTY: $0

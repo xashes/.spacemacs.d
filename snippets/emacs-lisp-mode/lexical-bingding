@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#name : lexical-bingding
+#key : lexi
+#contributor : xashes
+# --
+; -*- lexical-binding: t -*-
+
