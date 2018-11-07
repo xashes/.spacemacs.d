@@ -543,6 +543,7 @@ you should place your code here."
     "od" 'find-by-pinyin-dired
     )
   (define-key evil-insert-state-map (kbd "C-SPC") 'toggle-input-method)
+  (define-key global-map (kbd "C-;") 'complete-symbol)
   (add-hook 'anaconda-mode-hook
             (lambda ()
               (define-key anaconda-mode-map (kbd "C-;") 'anaconda-mode-complete))
