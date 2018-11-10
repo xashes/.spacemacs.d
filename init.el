@@ -57,6 +57,7 @@ This function should only modify configuration layer settings."
      racket
      (python :variables
              python-test-runner 'pytest
+             python-spacemacs-indent-guess nil
              :packages (not importmagic))
      ;; julia
      ;; ess
@@ -549,19 +550,16 @@ you should place your code here."
               (define-key anaconda-mode-map (kbd "C-;") 'anaconda-mode-complete))
     )
 
-  ;; fix company's not setup in the first python buffer issue
-  (spacemacs//python-setup-anaconda-company)
   (setq python-shell-completion-native-enable nil)
-  (setq python-indent-guess-indent-offset nil)
   ;; (with-eval-after-load 'company
   ;;   (add-to-list 'company-backends 'company-ob-ipython)
   ;;   )
-  ;; (add-hook 'anaconda-mode-hook
-  ;;           (lambda ()
-  ;;             (company-mode)
-  ;;             (setq-local company-backends '((company-ob-ipython)))
-  ;;             )
-  ;;           )
+  (add-hook 'anaconda-mode-hook
+            (lambda ()
+              (company-mode)
+              (setq-local company-backends '((company-anaconda company-dabbrev)))
+              )
+            )
 
   ;; enable evil-cleverparens
   (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)

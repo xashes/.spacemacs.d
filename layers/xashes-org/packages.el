@@ -48,7 +48,7 @@
                '("title" "#+TITLE: ?\n#+SETUPFILE: ./other/theme-bigblow.setup\n#+STARTUP: lognotereschedule\n\n"))
 
   ;; Task and org-capture management
-  (setq org-directory "~/org/personal")
+  (setq org-directory "~/org")
   (setq org-brain-path "~/org/brain")
 
   (setq org-plantuml-jar-path
