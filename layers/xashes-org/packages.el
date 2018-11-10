@@ -30,7 +30,7 @@
   (setq org-confirm-babel-evaluate nil
         org-src-tab-acts-natively t)
   (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
-  (add-hook 'org-mode-hook 'org-display-inline-images)
+  ;; (add-hook 'org-mode-hook 'org-display-inline-images)
 
   ;; When editing a code snippet, use the current window rather than popping open a
   ;; new one (which shows the same information).
