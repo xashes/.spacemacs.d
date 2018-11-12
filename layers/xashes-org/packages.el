@@ -26,7 +26,8 @@
 (with-eval-after-load 'org
   ;; Display preferences
   (setq org-ellipsis "⤵")
-  ;; Make TAB act as if it were issued in a buffer of the language's major mode.
+  (setq org-hide-emphasis-markers t)
+
   (setq org-confirm-babel-evaluate nil
         org-src-tab-acts-natively t)
   (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
@@ -70,27 +71,32 @@
           ("j" "Journal"
            entry
            (file+olp+datetree "~/org/personal/journal.org")
-           "* %^{Brief Description} %^g\n\t%?\n\tCaptured %U")
+           "* %?\n\tCaptured %U")
 
           ("s" "Steps"
            entry
            (file+olp+datetree "~/org/personal/tinysteps.org")
-           "* %^{Brief Description} %^g\n\t%?\n\tCaptured %U")
+           "* %?\n\tCaptured %U")
 
           ("t" "Trade Journal"
            entry
            (file+olp+datetree "~/org/trade/journal.org")
-           "* %^{Brief Description} %^g\n\t%?\n\tCaptured %U")
+           "* %?\n\tCaptured %U")
 
           ("n" "Note"
            entry
            (file "~/org/personal/note.org")
-           "* %^{Brief Description} %^g\n\t%?\n\tCaptured %U")
+           "* %?\n\tCaptured %U")
 
-          ("r" "Review"
+          ("r" "Reading"
+           entry
+           (file+headline "~/org/personal/reading.org" "Inbox")
+           "* %?\n\tCaptured %U")
+
+          ("v" "Review"
            entry
            (file+olp+datetree "~/org/personal/review.org")
-           "* %?\n")
+           "* %?\n\tCaptured %U")
 
           ("b" "Brain" plain (function org-brain-goto-end)
            "* %i%?" :empty-lines 1)
@@ -116,6 +122,7 @@
            ((agenda "")
             (tags "URGENT")
             (todo "NEXT")
+            (todo "REST")
             (todo "DOING")))
           ("o" "Agenda and Office-related tasks"
            ((agenda "")
