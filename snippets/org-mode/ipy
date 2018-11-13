@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 #name : ipython src block
-#key : <ipy
+#key : ipy
 #contributor : xashes
 # --
 #+BEGIN_SRC ipython :exports both :results raw drawer$0

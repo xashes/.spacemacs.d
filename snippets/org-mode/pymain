@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#name : pymain
+#key : pymain
+#contributor : xashes
+# --
+#+BEGIN_SRC ipython :tangle $0 :noweb yes :padline no :results silent
+#+END_SRC

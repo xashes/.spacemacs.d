@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 #name : header-args for file
-#key : <hargs
+#key : hargs
 #contributor : xashes
 # --
-#+PROPERTY: header-args: :$0
+#+PROPERTY: header-args$0 :$1

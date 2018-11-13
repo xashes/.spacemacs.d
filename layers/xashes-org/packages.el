@@ -83,6 +83,11 @@
            (file+olp+datetree "~/org/trade/journal.org")
            "* %?\n\tCaptured %U")
 
+          ("w" "Stock Watching List"
+           entry
+           (file+headline "~/org/trade/stock_profile.org" "Inbox")
+           "* %?\n\tCaptured %U")
+
           ("n" "Note"
            entry
            (file "~/org/personal/note.org")

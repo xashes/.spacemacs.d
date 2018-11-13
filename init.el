@@ -105,8 +105,7 @@ This function should only modify configuration layer settings."
                      spell-checking-enable-auto-dictionary t
                      enable-flyspell-auto-completion t)
      syntax-checking
-     ;; (semantic :disabled-for emacs-lisp)
-     semantic
+     (semantic :disabled-for emacs-lisp)
      neotree
      )
 
