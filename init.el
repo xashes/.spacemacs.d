@@ -68,6 +68,8 @@ This function should only modify configuration layer settings."
      tern
      html
      json
+     yaml
+     ansible
      rust
      ;; (ivy :variables
      ;;      ivy-wrap t
@@ -80,7 +82,6 @@ This function should only modify configuration layer settings."
      ;;        latex-enable-auto-fill t
      ;;        latex-enable-magic t
      ;;        latex-enable-folding t)
-     yaml
      shell-scripts
      (shell :variables
             shell-default-shell 'term

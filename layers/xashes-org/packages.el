@@ -71,7 +71,7 @@
           ("j" "Journal"
            entry
            (file+olp+datetree "~/org/personal/journal.org")
-           "* %?\n\tCaptured %U")
+           "* %?%^g\n\tCaptured %U")
 
           ("s" "Steps"
            entry
