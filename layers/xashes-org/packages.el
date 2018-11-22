@@ -1,18 +1,18 @@
-;; [[file:~/org/env/dotfiles.org::*The%20list%20of%20Lisp%20packages%20required%20by%20the%20xashes-org%20layer.][The list of Lisp packages required by the xashes-org layer.:1]]
+;; [[file:~/org/env/spacemacs.org::*The%20list%20of%20Lisp%20packages%20required%20by%20the%20xashes-org%20layer.][The list of Lisp packages required by the xashes-org layer.:1]]
 (defconst xashes-org-packages
   '((org :location built-in)
     ob-ipython
     ))
 ;; The list of Lisp packages required by the xashes-org layer.:1 ends here
 
-;; [[file:~/org/env/dotfiles.org::*company][company:1]]
+;; [[file:~/org/env/spacemacs.org::*company][company:1]]
 ;; (defun xashes-org/post-init-company ()
 ;;   (spacemacs|add-company-backends
 ;;     :backends company-ob-ipython
 ;;     :modes ob-ipython-mode))
 ;; company:1 ends here
 
-;; [[file:~/org/env/dotfiles.org::*ob-ipython][ob-ipython:1]]
+;; [[file:~/org/env/spacemacs.org::*ob-ipython][ob-ipython:1]]
 (defun xashes-org/pre-init-ob-ipython ()
   (spacemacs|use-package-add-hook org
     :post-config
@@ -21,7 +21,7 @@
 (defun xashes-org/init-ob-ipython ())
 ;; ob-ipython:1 ends here
 
-;; [[file:~/org/env/dotfiles.org::*org][org:1]]
+;; [[file:~/org/env/spacemacs.org::*org][org:1]]
 (defun xashes-org/post-init-org ()
 (with-eval-after-load 'org
   ;; Display preferences
@@ -71,7 +71,7 @@
           ("j" "Journal"
            entry
            (file+olp+datetree "~/org/personal/journal.org")
-           "* %?%^g\n\tCaptured %U")
+           "* %?\t%^g\n\tCaptured %U")
 
           ("s" "Steps"
            entry
