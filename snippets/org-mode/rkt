@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#name : rkt
+#key : rkt
+#contributor : xashes
+# --
+#+BEGIN_SRC racket$0
+#+END_SRC

@@ -551,6 +551,13 @@ you should place your code here."
               (define-key anaconda-mode-map (kbd "C-;") 'anaconda-mode-complete))
     )
 
+  ;; (add-hook 'racket-mode-hook #'racket-unicode-input-method-enable)
+  ;; (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
+
+  ;; get rid of visit tags in racket mode
+  (setq spacemacs-default-jump-handlers
+        (remove 'evil-goto-definition spacemacs-default-jump-handlers))
+
   (setq python-shell-completion-native-enable nil)
   ;; (with-eval-after-load 'company
   ;;   (add-to-list 'company-backends 'company-ob-ipython)
