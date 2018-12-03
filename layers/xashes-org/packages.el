@@ -78,7 +78,7 @@
            (file+olp+datetree "~/org/personal/tinysteps.org")
            "* %?\t%^g\n\tCaptured %U")
 
-          ("y" "What to do now, Why?"
+          ("d" "What to do now, Why?"
            entry
            (file+olp+datetree "~/org/personal/what-todo-now-why.org")
            "* %?\t%^g\n\tCaptured %U")
